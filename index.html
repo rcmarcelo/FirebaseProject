@@ -1,0 +1,52 @@
+
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Firebase Web Basics</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="mainDiv" align="left">
+		<h1>Novo Usuário</h1>
+		<div>
+		<input type="text" id="uname" placeholder="Name"></input><br>
+		<input type="text" id="umail" placeholder="Email"></input><br>
+		<input type="text" id="uphone" placeholder="Phone"></input><br><br>
+		<button bid="submitBtn" onClick="submitClick()">Add</i></button>
+		<h1>Usuários Cadastrados</h1>
+		<table cellspacing=0>
+			<thead>
+				<tr>
+					<td>Nome</td>
+					<td>E-mail</td>
+					<td>Telefone</td>
+					<td></td>
+				</tr>
+			</thead>
+			<tbody id="table_body"></tbody>
+		</table>		
+	</div>
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyCBRBvEQUAyGBzcFwB6Ra2Qs9SGdv49fe8",
+	    authDomain: "fir-agenda-fbc23.firebaseapp.com",
+	    databaseURL: "https://fir-agenda-fbc23.firebaseio.com",
+	    projectId: "fir-agenda-fbc23",
+	    storageBucket: "fir-agenda-fbc23.appspot.com",
+	    messagingSenderId: "872004030036"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<script src="index.js"></script>
+
+
+</body>
+</html>
